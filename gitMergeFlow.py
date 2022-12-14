@@ -25,9 +25,8 @@ if len(args) == 0:
     exit(1)
 
 # check if all branches exist
-branches = repo.branches
-branchNames = list(map(lambda x: x.name, branches))
-invalidBranches = list(filter(lambda x: x not in branchNames, args))
+branchNames = [x.name for x in repo.branches]
+invalidBranches = [x for x in args if x not in branchNames]
 if len(invalidBranches) > 0:
     cprint('Branch does not exist: {}'.format(invalidBranches), 'red')
     exit(1)
