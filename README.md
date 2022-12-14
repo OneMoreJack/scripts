@@ -1,7 +1,7 @@
 # scripts
 Useful scripts📃 for daily work
 
-- ✅ `gitMergeFlow.py` 
+- ✅ `gitMergeFlow.py`    
   Merge between branches in a roll.
   
   ```sh
