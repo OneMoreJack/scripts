@@ -39,6 +39,7 @@ def mergeFlow(branches):
         git.checkout(branch)
         git.pull()
         if idx == 0:
+            git.push()
             continue
         git.merge('-')
         git.push()
